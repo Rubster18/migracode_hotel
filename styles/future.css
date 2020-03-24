@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: yellow;
+  background-color: black;
+  background-image: url(../imgs/future/night.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.cats {
+  justify-content: center;
+}
+.onlytext {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  -webkit-text-stroke: 1.5px black;
+}

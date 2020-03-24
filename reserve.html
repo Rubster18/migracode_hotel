@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="styles/reserve.css"> </link> 
+  <meta charset= "utf-8">
+    <title> Migracode Hotel </title>
+    </head>
+
+<!-- HEADER -->
+
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li class="logo"> <a href="index.html"> Migracode Hotel home</a></li>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="reserve.html"> Reserve a room </a> </li>
+                <li> <a href="contact.html"> Contact us </a> </li>
+            </ul>
+        </nav>
+        <h1>MigraCode Hotel</h1>
+    </header>
+
+    <!-- SECTIONS -->
+
+    <section class="topsec"> 
+       <div class="datepicker">
+           <form class="userinputs">
+           <label for="city">City</label>
+           <select name="city">
+               <option value="Bar">Barcelona</option>
+               <option value="Mad">Madrid</option>
+           </select>
+        </form>  
+        <form class="userinputs">
+        <label for="checkin">Check In</label>
+        <input type="date" name="checkin" value="2020-03-25" min="2020-03-25" max="2021-03-25"/>
+        </form>
+        <form class="userinputs">
+            <label for="checkout">Check out</label>
+            <input type="date" name="checkin" value="2020-03-26" min="2020-03-26" max="2021-03-25"/>
+        </form>
+        <form>
+            <label for="guestsA">How many adults?</label>
+            <select name="guestsA">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="9+">9+</option>
+            </select>
+        </form>
+        <form>
+            <label for="guestsC">How many children?</label>
+            <select name="guestsA">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="9+">9+</option>
+            </select>
+        </form>
+        <form>
+            <label for="rooms">How many rooms?</label>
+            <select name="guestsA">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="9+">9+</option>
+            </select>
+        </form>
+        <form>
+            <input type="button" value="Click me" onclick=msg(well done!)/>
+        </form>
+       </div>
+       <figure>
+        <img src="./imgs/reserve/rag.jpg" alt="receptionist and guests" class="square-img" > 
+        <figcaption> 
+            Thanks for staying with us
+        </figcaption>
+    </figure>
+    </section>
+    <section class="bottomsec">
+        <figure>
+            <a href="contact.html"> <img src="./imgs/reserve/contact.png" alt="guy holding help sign" class="res-img"> </a>
+            <figcaption> 
+                <a href="contact.html"> Need help? we want to help you!</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- FOOTER -->
+    <footer> Carrer de Example 123 • +34 123456789 • migracodehotel@migracodehotel.com </footer>
+</body>
+</html>
