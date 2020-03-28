@@ -26,67 +26,38 @@
     <section class="topsec"> 
        <div class="datepicker">
            <form class="userinputs">
-           <label for="city">City</label>
+           <p class="checkform"> <label for="city">City</label> </p>
            <select name="city">
                <option value="Bar">Barcelona</option>
                <option value="Mad">Madrid</option>
            </select>
         </form>  
         <form class="userinputs">
-        <label for="checkin">Check In</label>
+        <p> <label for="checkin">Check In</label>  </p>
         <input type="date" name="checkin" value="2020-03-25" min="2020-03-25" max="2021-03-25"/>
         </form>
         <form class="userinputs">
-            <label for="checkout">Check out</label>
+           <p> <label for="checkout">Check out</label> </p>
             <input type="date" name="checkin" value="2020-03-26" min="2020-03-26" max="2021-03-25"/>
         </form>
         <form>
-            <label for="guestsA">How many adults?</label>
-            <select name="guestsA">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="9+">9+</option>
-            </select>
+            <p> <label for="guestsA">How many adults?</label> </p>
+            <input type="range" id="send" min="0" max="9" oninput="result.value = send.value" />
+            <input type="text" id="result" value="0" />
         </form>
         <form>
-            <label for="guestsC">How many children?</label>
-            <select name="guestsA">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="9+">9+</option>
-            </select>
+            <p> <label for="guestsC">How many children?</label> </p>
+            <input type="range" id="send" min="0" max="9" oninput="result.value = send.value" />
+            <input type="text" id="result" value="0" />
         </form>
         <form>
-            <label for="rooms">How many rooms?</label>
-            <select name="guestsA">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="9+">9+</option>
-            </select>
-        </form>
-        <form>
-            <input type="button" value="Click me" onclick=msg(well done!)/>
+            <p> <label for="rooms">How many rooms?</label> </p>
+            <input type="range" id="send" value="0" min="0" max="9" oninput="result.value = send.value" />
+            <input type="text" id="result" value="0" />
+        </form class="button">
+            <form action="./done.html" method="get">
+                <input type="submit" value="Submit" 
+                     name="Submit" id="checkinfinish" />
         </form>
        </div>
        <figure>
